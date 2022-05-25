@@ -46,5 +46,5 @@ The sample setting of "M116,M106,M104,M103,M102,M101,M100,M98,M96,M86,M79,M72,M6
 
 The json response is parsed to extract key attributes and flattened to match the schema above. The extracted attributes are packed into a gRPC Feature object per the velocity_grpc.proto file in the Protos folder.
 
-The Features objects are then sent to the gRPC feed configured above.
+The Features objects are then sent to the gRPC feed configured above. This process is repeated according to the setting in app.config > configuration > appSettings > sendInterval
 
